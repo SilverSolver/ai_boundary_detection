@@ -7,7 +7,8 @@ _Due to the rapid development of large language models, people increasingly ofte
 In this repository you can find both datasets, used in the paper:
 - `roft_duplicates_removed.csv` - the dataset, introduced in the paper [Real or Fake Text?: Investigating Human Ability to Detect Boundaries. Between Human-Written and Machine-Generated Text](https://arxiv.org/abs/2212.12672) by Dugan et al., but duplicate entries (i.e. entries with the repeating prompts and generations) are removed by us. Don't forget to cite that original paper when using the dataset.
 - `roft_chatgpt.csv` - augmented version of RoFT dataset with chatgpt-3.5 generations (our modification).
-There are also example implementations of the main algorithms, used in our paper:
+
+There are also some example implementations of the algorithms, used in our paper:
 - `roft_sliding_window_counting_PHD.ipynb` - calculating PHD of an embeddings of a text sequences using a sliding window technique. It also contains the function for calculating MLE as an alternative.
 - `roft_original_TimeSeriesSVR_classification_sliding_window_davinci.ipynb` - applying timeseries SVM to the series, obtained with the algorithm above.
 
