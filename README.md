@@ -11,6 +11,7 @@ In this repository you can find both datasets, used in the paper:
 There are also some example implementations of the algorithms, used in our paper:
 - `roft_sliding_window_counting_PHD.ipynb` - calculating PHD of an embeddings of a text sequences using a sliding window technique. It also contains the function for calculating MLE as an alternative.
 - `roft_original_TimeSeriesSVR_classification_sliding_window_davinci.ipynb` - applying timeseries SVM to the series, obtained with the algorithm above.
+- `neg_log_likelihoods.ipynb` — build classifiers on top of calculated negative log likelihoods of tokens in the text using LLMs. Note that fist `perplexity.py` script should be used to calculate negative log likelihoods of tokens.
 
 Please note that in our experiments, we derived the test sets from both datasets using `train_test_split` function from `sklearn 1.4.1`, used together with `numpy 1.24.4`:
 
